@@ -217,3 +217,139 @@ body{
         margin-top: 22%;
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    .header h1 {
+        left: 2.5%;
+    }
+
+    .time-block {
+        left: 2.5%;
+        right: 2.5%;
+    }
+
+    .display-count {
+        width: 25%;
+        left: 10%;
+    }
+
+    .display-count h1 {
+        margin-top: 22%;
+    }
+
+    .fingers-box {
+        width: 25%;
+        left: 12.5%;
+    }
+
+    .fingers-box h1 {
+        margin-top: 37%;
+    }
+
+    .toes-box {
+        width: 25%;
+        left: 15%;
+    }
+
+    .toes-box h1 {
+        margin-top: 37%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .header {
+        text-align: center;
+    }
+
+    .header h1 {
+        position: absolute;
+    }
+
+    .time-block {
+        left: 2.5%;
+        right: 2.5%;
+    }
+
+    .time-block-question {
+        width: 95%;
+        text-align: center;
+    }
+
+    .time-block-input {
+        left: 20%;
+        width: 60%;
+    }
+
+    .time-block-input input {
+        width: 100%;
+        height: 78px;
+    }
+
+    .time-block-button {
+        clear: both;
+        left: 20%;
+        width: 60%;
+        /*top: -60px;*/
+    }
+
+    .time-block-button button {
+        width: 100%;
+        font-size: 29px;
+        height: 78px;
+    }
+
+    .restart-button {
+        clear: both;
+        left: 20%;
+        width: 30%;
+        /*top: -55px;*/
+    }
+
+    .restart-button button {
+        width: 100%;
+        height: 68px;
+        font-size: 25px;
+    }
+
+    .clear-button {
+        left: 20%;
+        width: 30%;
+        /*top: -55px;*/
+    }
+
+    .clear-button button {
+        width: 100%;
+        height: 68px;
+        font-size: 25px;
+    }
+
+    .display-count {
+        width: 95%;
+        left: 2.5%;
+        top: 360px;
+    }
+
+    .display-count h1 {
+        margin-top: 7%;
+    }
+
+    .fingers-box {
+        width: 46.25%;
+        left: 2.5%;
+        top: 365px;
+    }
+
+    .fingers-box h1 {
+        margin-top: 25%;
+    }
+
+    .toes-box {
+        width: 46.25%;
+        left: 5%;
+        top: 365px;
+    }
+
+    .toes-box h1 {
+        margin-top: 25%;
+    }
+}
