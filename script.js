@@ -27,3 +27,73 @@ function clearAllIntervals(){
 		clearInterval(i);
 	}
 }
+
+function initializeTimer(maxNumber){
+	clearAllIntervals();
+	var startNumber = 1;
+	var displayNumber = document.getElementById('display-number');
+	var intervalId = setInterval(function(){
+		var newNumber = startNumber++;
+		if(newNumber < maxNumber){
+			if(newNumber % 5 === 0 && newNumber % 3 === 0){
+				fingers.style.backgroundColor = 'cornflowerblue';
+				fingers.style.color = 'white';
+				toes.style.backgroundColor = 'cornflowerblue';
+				toes.style.color = 'white';
+				displayNumber.innerHTML = newNumber.toString();
+			}
+			else if(newNumber % 5 === 0){
+				fingers.style.backgroundColor = 'transparent';
+				fingers.style.color = 'black';
+				toes.style.backgroundColor = 'cornflowerblue';
+				toes.style.color = 'white';
+				displayNumber.innerHTML = newNumber.toString();	
+			}
+			else if(newNumber % 3 === 0){
+				fingers.style.backgroundColor = 'cornflowerblue';
+				fingers.style.color = 'white';
+				toes.style.backgroundColor = 'transparent';
+				toes.style.color = 'black';
+				displayNumber.innerHTML = newNumber.toString();		
+			}
+			else{
+				fingers.style.backgroundColor = 'transparent';
+				fingers.style.color = 'black';
+				toes.style.backgroundColor = 'transparent';
+				toes.style.color = 'black';
+				displayNumber.innerHTML = newNumber.toString();	
+			}
+		}
+		if(newNumber == maxNumber){
+			if(newNumber % 5 === 0 && newNumber % 3 === 0){
+				fingers.style.backgroundColor = 'cornflowerblue';
+				fingers.style.color = 'white';
+				toes.style.backgroundColor = 'cornflowerblue';
+				toes.style.color = 'white';
+				displayNumber.innerHTML = newNumber.toString();
+			}
+			else if(newNumber % 5 === 0){
+				fingers.style.backgroundColor = 'transparent';
+				fingers.style.color = 'black';
+				toes.style.backgroundColor = 'cornflowerblue';
+				toes.style.color = 'white';
+				displayNumber.innerHTML = newNumber.toString();	
+			}
+			else if(newNumber % 3 === 0){
+				fingers.style.backgroundColor = 'cornflowerblue';
+				fingers.style.color = 'white';
+				toes.style.backgroundColor = 'transparent';
+				toes.style.color = 'black';
+				displayNumber.innerHTML = newNumber.toString();		
+			}
+			else{
+				fingers.style.backgroundColor = 'transparent';
+				fingers.style.color = 'black';
+				toes.style.backgroundColor = 'transparent';
+				toes.style.color = 'black';
+				displayNumber.innerHTML = newNumber.toString();	
+			}
+			clearInterval(intervalId);
+		}
+	},1000)
+}
