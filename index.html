@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fingers and Toes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <div class = "header">
+        <h1>Fingers and Toes Application</h1>
+    </div>
+    <div class="time-block">
+        <div class="time-block-question">
+            <h1>How many seconds would you like to count to? </h1>
+        </div>
+        <div class="input-row">
+            <div class="time-block-input">
+                <input type="number" placeholder="Enter no of seconds" id="input-number"/>
+            </div>
+            <div class="time-block-button">
+                <button onclick="startTimer()" type="button" id="startTimer">Start</button>
+            </div>
+            <div class="restart-button">
+                <button onclick="restartTimer()" type="button">Restart</button>
+            </div>
+            <div class="clear-button">
+                <button onclick="resetTimer()" type="button">Reset</button>
+            </div>
+        </div>
+    </div>
+    <div class="display-blocks-section">
+        <div class="display-count">
+            <h1 id="display-number">0</h1>
+        </div>
+        <div class="fingers-box" id="fingers-box">
+            <h1>FINGERS</h1>
+        </div>
+        <div class="toes-box" id="toes-box">
+            <h1>TOES</h1>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
